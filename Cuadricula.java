@@ -18,7 +18,7 @@ public class Cuadricula extends Canvas{
 	}
 	public void paint(Graphics g)
 	{
-		g.setColor(Color.gray);
+		g.setColor(Color.DARK_GRAY);
 		for (int i=0;i<70;i++) {
 			for (int j=0;j<70;j++) {
 				if (cordinadas[i][j] == 1) {

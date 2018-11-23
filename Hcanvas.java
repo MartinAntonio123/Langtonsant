@@ -23,13 +23,14 @@ public class Hcanvas extends Canvas implements Runnable{
 	private Cuadricula micuadricula;
 	private int iterations, speed, cont;
 
+
 	public Hcanvas(){
 		super();
 		this.setBackground(Color.white);
 		mihormiga = new Hormiga(30, 20);
 		micuadricula = new Cuadricula();
 		iterations = 1000;
-		speed = 3;
+		speed = 10;
 		cont = 0;
 	}
 	public void update(Graphics g){
@@ -40,7 +41,7 @@ public class Hcanvas extends Canvas implements Runnable{
         offScreenImageDrawed = createImage(2000, 1800);
     }
     offScreenGraphicsDrawed = offScreenImageDrawed.getGraphics();
-    offScreenGraphicsDrawed.setColor(Color.white);
+    offScreenGraphicsDrawed.setColor(Color.LIGHT_GRAY);
 		offScreenGraphicsDrawed.fillRect(0,0,2000,1800);
 		micuadricula.paint(offScreenGraphicsDrawed);
 		mihormiga.paint(offScreenGraphicsDrawed);
