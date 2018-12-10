@@ -27,7 +27,7 @@ public class Hcanvas extends Canvas implements Runnable{
 	public Hcanvas(){
 		super();
 		this.setBackground(Color.white);
-		mihormiga = new Hormiga(30, 20);
+		mihormiga = new Hormiga(0, 0);
 		micuadricula = new Cuadricula();
 		iterations = 1000;
 		speed = 10;

@@ -67,15 +67,27 @@ public class Hormiga extends Canvas{
 	public void avanza(){
 		if (dir == 1) {
 			this.y = this.y - 1 ;
+			if (this.y < 0) {
+				this.y = 33;
+			}
 		}
 		else if (dir == 2) {
 			this.x = this.x + 1 ;
+			if (this.x > 63) {
+				this.x = 0;
+			}
 		}
 		if (dir == 3) {
 			this.y = this.y + 1 ;
+			if (this.y > 33) {
+				this.y = 0;
+			}
 		}
 		else if (dir == 4) {
 			this.x = this.x - 1 ;
+			if (this.x < 0) {
+				this.x = 63;
+			}
 		}
 	}
 }
